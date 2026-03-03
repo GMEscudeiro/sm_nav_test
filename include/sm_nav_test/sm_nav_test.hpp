@@ -21,12 +21,13 @@ using namespace smacc2;
 
 namespace sm_nav_test {
 // STATE
-class State1;
-class State2;
+class StIdle;
+class StState1;
+class StGoalSend;
 
 //--------------------------------------------------------------------
 // STATE_MACHINE
-struct SmNavTest : public smacc2::SmaccStateMachineBase<SmNavTest, State1> {
+struct SmNavTest : public smacc2::SmaccStateMachineBase<SmNavTest, StIdle> {
   using SmaccStateMachineBase::SmaccStateMachineBase;
 
   virtual void onInitialize() override {

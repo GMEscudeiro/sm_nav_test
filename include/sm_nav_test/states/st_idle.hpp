@@ -6,7 +6,7 @@ using namespace cl_ros2_timer;
 using namespace smacc2::default_transition_tags;
 
 // STATE DECLARATION
-struct Idle : smacc2::SmaccState<Idle, SmNavTest> {
+struct StIdle : smacc2::SmaccState<StIdle, SmNavTest> {
   using SmaccState::SmaccState;
 
   // TRANSITION TABLE

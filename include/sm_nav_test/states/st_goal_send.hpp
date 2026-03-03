@@ -12,7 +12,7 @@ struct StGoalSend : smacc2::SmaccState<StGoalSend, SmNavTest> {
   typedef mpl::list<
 
       Transition<EvCbSuccess<cl_ros2_orch::CbNavToStoragePose, OrNavigation>,
-                 State1, SUCCESS>
+                 StState1, SUCCESS>
 
       >
       reactions;

@@ -19,13 +19,13 @@ using namespace cl_ros2_timer;
 using namespace smacc2::default_transition_tags;
 
 // STATE DECLARATION
-struct State1 : smacc2::SmaccState<State1, SmNavTest> {
+struct StState1 : smacc2::SmaccState<StState1, SmNavTest> {
   using SmaccState::SmaccState;
 
   // TRANSITION TABLE
   typedef mpl::list<
 
-      Transition<EvTimer<CbTimerCountdownOnce, OrTimer>, Idle, SUCCESS>
+      Transition<EvTimer<CbTimerCountdownOnce, OrTimer>, StIdle, SUCCESS>
 
       >
       reactions;
